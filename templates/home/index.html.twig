@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <turbo-frame id="the_frame_id">
+        <p><a href="{{ path('another-page') }}">This block is scoped, the rest of the page will not change if you click here!</a></p>
+    </turbo-frame>
+
+
+    <turbo-frame id="the_new_frame_id" src="{{ path('block') }}">
+        A placeholder.
+    </turbo-frame>
+{% endblock %}

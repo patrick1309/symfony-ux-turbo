@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Lazy-load turbo frame</h1>
+
+    <turbo-frame id="the_new_frame_id">
+        <h2>Frame ID : {{ frameId }}</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident maxime, ab officiis quis officia iste molestias itaque nemo facere placeat repudiandae facilis natus eaque eos voluptas quibusdam minus minima exercitationem!</p>
+    </turbo-frame>
+{% endblock %}
