@@ -40,6 +40,7 @@
         "symfony/translation": "6.1.*",
         "symfony/twig-bundle": "6.1.*",
         "symfony/ux-turbo": "^2.2",
+        "symfony/ux-turbo-mercure": "^2.2",
         "symfony/validator": "6.1.*",
         "symfony/web-link": "6.1.*",
         "symfony/yaml": "6.1.*",

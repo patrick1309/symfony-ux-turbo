@@ -1,0 +1,6 @@
+{# New messages received through the Mercure connection are appended to the div with the "messages" ID. #}
+<turbo-stream action="append" target="messages">
+    <template>
+        <div>{{ message }}</div>
+    </template>
+</turbo-stream>
