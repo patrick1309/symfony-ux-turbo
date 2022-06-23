@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BookController!{% endblock %}
+
+{% block body %}
+    <turbo-frame id="book_form">
+        {{ form(form) }}
+    </turbo-frame>
+
+    <div id="books" {{ turbo_stream_listen('App\\Entity\\Book') }}>
+        {% for book in books %}
+            <div id="{{ 'book_' ~ book.id }}">{{ book.title }} (#{{ book.id }})</div>
+        {% endfor %}
+    </div>
+{% endblock %}
